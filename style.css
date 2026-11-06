@@ -15,6 +15,7 @@
 
 * {
     box-sizing: border-box;
+    border-radius: 1em;
 }
 
 body {
@@ -28,9 +29,14 @@ h1, strong {
     font-family: 'Times New Roman, Bold';
 }
 
+img {
+    object-fit: contain;
+}
+
 #header {
     background-image: url('assets/twinkle_space_black.gif');
     border: 2px solid gold;
+    border-radius: 10px;
     color: yellow;
     margin-bottom: 5vh;
     margin-left: 10vw;
@@ -48,12 +54,11 @@ h1, strong {
 }
 
 #sidebar {
-    padding-left: 20px;
+    padding: 2em;
     width: 30vw;
 }
 
 #footer {
-    border: 2px solid gold;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -61,6 +66,7 @@ h1, strong {
 .imageflex {
     background: darkblue;
     border: 2px solid gold;
+    border-radius: 10px;
     display: flex;
     margin: 10px;
     padding: 20px;
@@ -68,14 +74,23 @@ h1, strong {
 
 .imageflexcontent {
     display: inline-block;
-    margin-left: 20px;
-    margin-top: 0;
+    margin-left: 1em;
     vertical-align: top;
 }
 
 .sidebarbutton {
     background: darkblue;
     border: 2px solid gold;
+    box-sizing: border-box;
+    color: white;
+    display: block;
     font-family: 'Arial, Black, Italic';
-    padding-left: 20px;
+    margin: 1em;
+    padding: 1em;
+    width: 100%;
+}
+
+.sidebarbutton:hover {
+    background: gold;
+    color: black;
 }
