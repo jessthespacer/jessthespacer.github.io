@@ -119,9 +119,10 @@ function update_tiny(i) {
     else tiny[i].style.visibility="hidden";
 }
 
-document.onmousemove=mouse;
-document.ontouchstart=mouse;
-document.ontouchmove=mouse;
+document.addEventListener("mousemove", (event) => mouse(event));
+document.addEventListener("touchstart", (event) => mouse(event));
+document.addEventListener("touchmove", (event) => mouse(event));
+// document.onmousemove=mouse;
 function mouse(e) {
     if (e) {
         y=e.pageY;
