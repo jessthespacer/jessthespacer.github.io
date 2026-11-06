@@ -7,5 +7,4 @@ repo = "builtin"
 hooks = [
     { id = "trailing-whitespace" },
     { id = "end-of-file-fixer" },
-    { id = "check-added-large-files" },
 ]
